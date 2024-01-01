@@ -1,0 +1,179 @@
+.main{
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 24px;
+    height: 851px;
+    width: 393px;  
+    margin: 100px auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.bg-biru{
+    background-color: #031441;
+    height: 851px;
+    width: 393px;
+    position: absolute;
+    opacity: 0.65; /* Gunakan nilai antara 0 dan 1 */
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    flex-direction: row-reverse; 
+}
+
+.header-logo-kanan{
+    left: 0;
+    display: inline-flex;
+    font-size: 20px;
+}
+
+.fa-solid {
+    color: #fff;
+    display: flex;
+    position: relative;
+    top: 0;
+    left: 0px;
+    padding: 10px;
+    align-items: center;
+}
+
+.header-jam-kiri {
+    font-size: 20px;
+    font-family: 'Franklin Gothic';
+    color: #fff;
+    display: block; /* Menambahkan properti display */
+    position: relative; /* Tambahkan properti position */
+    z-index: 9999; /* Tambahkan properti z-index */
+}
+
+.create-account {
+    font-family: 'Poppins', sans-serif;
+    font-size: 35px;
+    text-align: left;
+    padding: 30px;
+    color: #fff; /* Tambahkan properti untuk warna hitam */
+    position: absolute; /* Tambahkan properti absolute */
+    top: 200px; /* Sesuaikan posisi top sesuai keinginan */
+    left: 40%; /* Pusatkan horizontal dengan 50% */
+    /*transform: translateX(50%); /* Pusatkan horizontal dengan 50% */
+}
+
+.create-account span {
+    font-weight: bold;
+    display: block;
+}
+
+.create-account span::after {
+    content: " ";
+    display: block;
+}
+
+.create-account::before,
+.create-account::after {
+    content: "";
+    display: block;
+    height: 0;
+}
+
+.rectangle-persegi{
+    background-color: #FDFDFD;
+    position: absolute;
+    width: 393px;
+    height: 851px;
+    top: 255px;
+    right: 0px;
+    left: 0px;
+    border-radius: 27px;
+}
+
+.registrasi{
+    position: absolute;
+    width: 309px;
+    height: 590px;
+    top: 26px;
+    left: 140px;
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif; /* Menggunakan font Poppins */
+    text-shadow:0 1px 2px #000;
+}
+
+.form-login{
+    position: absolute;
+    width: 414px;
+    height: 550px;
+    top: 75px;
+    left: 20px;
+}
+
+.isian-form{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    padding: 2px;
+    margin-top: 7px;
+    font-size: 20px;
+}
+
+input[type=email], input[type=text],select, textarea {
+    width: 85%;
+    padding: 8px;
+    display: inline-block;
+    border: none;
+    border-radius: 10px;
+    background: #d9d9d9;
+}
+
+input[type=password], select, textarea {
+    width: 85%;
+    padding: 8px;
+    display: inline-block;
+    border: none;
+    border-radius: 10px;
+    background: #d9d9d9;
+}
+
+input[type=email]:focus, input[type=password]:focus, input[type=text]:focus {
+    background-color: #b4b4b4;
+    outline: none;
+}
+
+.lorem-ipsum-lorem {
+    color: #000;
+    transform: translate(15%, 2000%);
+    text-shadow: 0px 1px 2px #00000040;
+    font-size: 18px;
+}
+
+input[type=submit]{
+    background-color: #d9d9d9;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    float: right;
+    transform: translate(-210%, 40%);
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif; /* Menggunakan font Poppins */
+}
+
+input[type=submit]:hover{
+    background-color: #19A7CE;
+}
+
+.isian-form span {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 3px; /* Jarak antara span dan input */
+}
+
+.button-registrasi {
+    transform: translate(30px, 40px);
+}
+
+.button-registrasi:hover .register {
+    filter: brightness(70%); /* Ubah kecerahan gambar saat dihover */
+}
